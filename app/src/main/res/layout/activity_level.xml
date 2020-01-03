@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/level_background"
+    tools:context=".LevelActivity">
+
+<TextView
+    android:id="@+id/text_timer_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="casual"
+        android:text="Good Luck"
+        android:textAllCaps="false"
+        android:textColor="@color/colorYellow"
+        android:textSize="75sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/guideline">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/line_1">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/line_2">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/line_3">
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/hidden_card" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="80pt"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
