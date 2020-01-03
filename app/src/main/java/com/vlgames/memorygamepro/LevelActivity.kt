@@ -51,7 +51,7 @@ class LevelActivity : AppCompatActivity() {
             arrayButtons[i].setOnClickListener {
                 if (clicked == 2) {
                     turnOver = true
-                    if (arrayButtons[i].text == arrayButtons[i].tag && !turnOver) {
+                    if (arrayButtons[i].toString() == arrayButtons[lastClicked].toString()) {
                         arrayButtons[i].isClickable = false
                         arrayButtons[lastClicked].isClickable = false
                         turnOver = false
@@ -67,6 +67,9 @@ class LevelActivity : AppCompatActivity() {
                     }
                 }
                 Log.d("Clicked", arrayImage[i].toString())
+                Log.d("Clicked0", clicked.toString())
+                Log.d("Clicked1", arrayImage[lastClicked].toString())
+
 
             }
         }
